@@ -1,0 +1,44 @@
+[11:29 am, 11/12/2025] shunmathi: <!DOCTYPE html>
+<html>
+<head>
+<title>Power Calculator</title>
+<style>
+    body{
+        background:red;
+        font-family:Arial;
+    }
+    .box{
+        width:380px;
+        padding:20px;
+        margin:100px auto;
+        background:blue;
+        color:white;
+        border:4px dotted green;
+        text-align:center;
+    }
+    input{
+        padding:5px;
+        margin:5px;
+        width:150px;
+        text-align:center;
+    }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h2 style="color:pink;">Power of a Lamp</h2>
+
+    <label>Current (I in Amps):</label><br>
+    <input type="number" id="i"><br>
+
+    <label>Resistance (R in Ohms):</label><br>
+    <input type="number" id="r"><br>
+
+    <button onclick="calcPower()">Calculate</button><br><br>
+
+    <label>…
+[11:43 am, 11/12/2025] shunmathi: from django.shortcuts import render
+
+def mathpage(request):
+    return render(request, 'mathapp/math.html')
